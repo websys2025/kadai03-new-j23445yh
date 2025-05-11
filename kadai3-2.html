@@ -8,12 +8,14 @@
         <script>
             function sum(a) { // 引数は配列
                 let s = 0; // 合計値の計算用
-                s +=a[i]// 配列を参照して合計値を計算する処理
+                for (let i = 0; i < a.length; i++){  feat:合計値を計算するfor文を追加
+                s +=a[i]// 配列を参照して合計値を計算する処理  feat:配列を参照して合計を求めるs +=a[i]を追加
+                }
                 return s;  // 戻り値はs
             }
             
             let b = [10, 8, 14, 15];
-            console.log(b); // 合計値を計算し表示する処理
+            console.log(sum(b)); // 合計値を計算し表示する処理  feat:合計値を表示するsum(b)を追加
         </script>
     </body>
 </html>
