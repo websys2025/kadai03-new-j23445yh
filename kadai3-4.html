@@ -23,7 +23,7 @@
                 console.log("商品は以下の" + items.length + "種類です。");
 
                 // 配列の内容を項目毎に出力
-                items.forEach(item => {  feat:配列の内容を項目毎に出力できるようにプログラムを追加
+                items.forEach(item => {  feat: 配列の内容を項目毎に出力できるようにプログラムを追加
                     console.log("商品番号: " + item.id + ", 商品名: " + item.name + ", 金額: " + item.price + ", 在庫数: " + item.stock);
                 });
                 console.log(""); // 空行の出力
@@ -31,8 +31,7 @@
 
             // 商品購入の関数
             function buyItem(no) {
-                // ここにコードを書く
-                const item = iteems.find(i => i.id === no);
+                const item = iteems.find(i => i.id === no);  feat: 商品購入を表示するプログラムを追加
                 if (item) {
                     console.log("商品番号: " + item.id + ", 商品名: " + item.name + "を購入します。");
                     if (item.stock > 0) {
