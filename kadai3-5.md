@@ -23,11 +23,20 @@
   
 * 連想配列の参照方法
 
-  item["name"], item["price"], item["stock"]
+  items.forEach(item => {
+
+
+      console.log("商品番号: " + item.id + ", 商品名: " + item.name + ", 金額: " + item.price + ", 在庫数: " + item.stock)
+
+
+  });
+  
   このようにコードを入力し、商品名、価格、在庫数をそれぞれ取得し、画面に出力する。
   
 ### Q5-3. buyItemの処理内容について説明せよ。
 * 商品購入の可否判定
+
+  
 * 商品在庫を減らす処理
 * 商品番号のエラー処理
 ### Q5-4. プログラムの考察
